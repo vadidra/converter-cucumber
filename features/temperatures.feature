@@ -1,7 +1,11 @@
-Feature: Nested steps
+Feature: Many values
 
-  @wip
-  Scenario: Nested steps
+  @many
+  Scenario: Many values
 
-    Given I have temperature converter and 10 temperatures in Fahrenheit degrees
-    Then I should get 10 temperatures in Celsius degrees
+    Given I have temperature in Fahrenheit degrees
+    Then I convert it to Celsius degrees
+
+      | Fahrenheit   | Celcius |
+      |           32 |       0 |
+      |           50 |      10 |
